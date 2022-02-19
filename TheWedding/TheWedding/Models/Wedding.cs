@@ -73,6 +73,11 @@ namespace TheWedding.Models
 
         public Wedding(MarriedPerson bride, MarriedPerson groom, Godparent godmother, Godparent godfather, Guest[] guests)
         {
+            Bride = bride;
+            Groom = groom;
+            Godmother = godmother;
+            Godfather = godfather;
+            Guests = guests;
         }
 
         public bool isSuccessful()
