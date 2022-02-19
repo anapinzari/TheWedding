@@ -1,4 +1,6 @@
-﻿namespace TheWedding.Models
+﻿using System;
+
+namespace TheWedding.Models
 {
     class Person
     {
