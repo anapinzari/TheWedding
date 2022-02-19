@@ -19,9 +19,23 @@ namespace TheWedding
             Guest[] guests = CreateGuests();
 
             Wedding wedding = new Wedding(bride, groom, godmother, godfather, guests);
+
+            DisplayWhetherTheWeddingWasSuccessfulOrNot(wedding);
                        
             Console.ReadKey();
-        }       
+        }
+
+        private static void DisplayWhetherTheWeddingWasSuccessfulOrNot(Wedding wedding)
+        {
+            if (wedding.isSuccessful())
+            {
+                Console.WriteLine("Congratulations! The wedding was successful.");
+            }
+            else
+            {
+                Console.WriteLine("The wedding was not successful.");
+            }
+        }
 
         private static Guest[] CreateGuests()
         {
